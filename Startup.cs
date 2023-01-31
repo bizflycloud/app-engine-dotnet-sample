@@ -34,7 +34,7 @@ namespace helloworld
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("hello, world");
+                    await context.Response.WriteAsync("Congratulations! Your first .NET Core application is now running on BizflyCloud App Engine!");
                 });
             });
         }
