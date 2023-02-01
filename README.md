@@ -1,9 +1,13 @@
-Đây là repo code mẫu cho một ứng dụng DotNet triển khai trên nền tảng BizflyCloud App Engine
+# Dotnet Core Sample App using ASPNet
 
-Tham khảo thêm cách thức triển khai ứng dụng DotNet tại đây
+## Building
 
-https://docs.bizflycloud.vn/app_engine/deploy/dotnet/
+`pack build dotnet-aspnet-sample --buildpack paketo-buildpacks/dotnet-core`
 
-Nhiều hơn các code mẫu về ngôn ngữ DotNet tại đây
+## Running
 
-https://github.com/bizflycloud/app-engine-samples-code/tree/master/dotnet
+`docker run --interactive --tty --env PORT=8080 --publish 8080:8080 dotnet-aspnet-sample`
+
+## Viewing
+
+`curl http://localhost:8080`
